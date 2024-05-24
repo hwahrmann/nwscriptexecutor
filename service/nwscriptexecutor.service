@@ -1,0 +1,11 @@
+# NetWitness ScriptExecutr Service file
+[Unit]
+Description=NetWitness - Script Executor
+
+[Service]
+User=root
+WorkingDirectory=/opt/nwscriptexecutor
+ExecStart=/opt/nwscriptexecutor/nwscriptexecutor
+
+[Install]
+WantedBy=multi-user.target

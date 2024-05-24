@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEVICEMESSAGES
+         name="nwscriptexecutor"
+         displayname="nwscriptexecutor"
+         group="Application Servers"
+         type="7104">
+
+<VERSION
+         xml="1"
+         revision="1"
+         device="2.0"/>
+
+<HEADER
+         id1="HDR1"
+         id2="HDR1"
+         messageid="STRCAT('Script_Generic')"
+         content="1 &lt;hyear&gt;-&lt;hmonth&gt;-&lt;hday&gt;T&lt;hhour&gt;:&lt;hmin&gt;:&lt;hsec&gt;.&lt;hmilli&gt;Z &lt;hhost&gt;&lt;hdevice&gt; - - - &lt;!payload&gt;"/>
+
+<MESSAGE
+         id1="Script_Generic"
+         id2="Script_Generic"
+         content="&lt;script_event&gt;"/>
+
+<VARTYPE name="script_event" dataType="NwScript"/>
+
+<DataType name="NwScript" format="JSON">
+    <Capture name="Action" key="/Action" meta="action"/>
+    <Capture name="ScriptName" key="/ScriptName" meta="obj.name"/>
+    <Capture name="Parameter" key="/Parameter" meta="param"/>
+    <Capture name="Result" key="/Result" meta="result"/>
+</DataType>
+
+</DEVICEMESSAGES>
