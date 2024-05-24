@@ -1,0 +1,32 @@
+#
+#  Script Server specific settings
+#
+Server:
+  Port: 8443   # Listen Port
+  ServerCertificate: certs/nwscriptexecutor.crt
+  ServerKey: certs/nwscriptexecutor.key
+  LogPath: logs\\
+
+#
+# Path of the scripts and various settings for script execution
+#
+Scripts:
+  ScriptsFolder: scripts\\
+  PythonPath: c:\\Users\\helmut.wahrmann\\AppData\\Local\\Programs\\Python\\Python312\\python.exe
+  PassParmAsJson: true  # if set to false the paramters are passed as comma separated value pairs
+
+#
+# Authentication
+#
+Authentication:
+  User: helmut
+  Password: Password123!
+
+#
+# Configure Syslog Host
+#
+Syslog:
+  Enabled: false
+  Host: 127.0.0.1
+  Port: 514
+  Protocol: udp
